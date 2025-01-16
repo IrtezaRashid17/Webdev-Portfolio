@@ -188,9 +188,30 @@
 }
 
 @media screen and (max-width: 576px) {
-    .skills-container, .resume-container, footer{
+    .banner, .skills-container, .resume-container, footer, nav> ul{
         flex-direction: column;
         padding: 10px;
+    }
+    .banner{
+        margin: 20px;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    nav ul li {
+        list-style: none;
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+
+    .header{
+        background-image: none;
     }
     .footer-column{
         width: 100%;
@@ -211,6 +232,15 @@
         border-radius: 10px;
         padding: 30px 10px;
         text-align: center;
+    }
+    .btn-primary {
+        background-color: #FD6E0A;
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+        border: none;
+        padding: 10px 19px;
+        border-radius: 5px;
     }
 }
 
